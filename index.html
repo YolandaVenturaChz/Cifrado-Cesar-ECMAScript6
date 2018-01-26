@@ -5,51 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Descifrado Cesar</title>
+    <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="vendors/bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <h1 class="col-12 col-md-12">Descifrado Cesar</h1>
-
+<body class="d-flex flex-column align-items-center ">
+    <header class="vh15 bg-info text-white d-flex flex-column justify-content-center align-items-center">
+        <h1 class="">Cifrado Cesar</h1>
+    </header>
+    <main class="container d-flex flex-column justify-content-around vh85">
+        <section class="row">
             <div class="input-group mb-3 col-12 col-md-6">
-                <input id="cifrar" type="text" class="form-control" onfocus="this.value=''" placeholder="Palabra para cifrar:" aria-label="Palabra para cifrar:"
+                <input id="cifrar" type="text" class="form-control col-md-6" onfocus="this.value=''" placeholder="Palabra para cifrar:" aria-label="Palabra para cifrar:"
                     aria-describedby="basic-addon2" autofocus>
                 <div class="input-group-append">
-                    <button id="cifrar1" class="btn btn-outline-secondary" type="button">Button</button>
+                    <button id="cifrar1" class="btn btn-info " type="button">Cifrar</button>
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
-                    <ul id="text">
-    
-                    </ul>
-                </div>
+            <div class="col-12 col-md-12">
+                <ul id="text" class="text-secondary">
 
+                </ul>
+            </div>
+        </section>
+        <section class="row">
             <div class="input-group mb-3 col-12 col-md-6">
-                <input id="descifrar" type="text" class="form-control" onfocus="this.value=''" placeholder="Palabra para descifrar:"
+                <input id="descifrar" type="text" class="form-control col-md-6" onfocus="this.value=''" placeholder="Palabra para descifrar:"
                     aria-label="Palabra para descifrar:" aria-describedby="basic-addon2" autofocus>
                 <div class="input-group-append">
-                    <button id="descifrar1" class="btn btn-outline-secondary" type="button">Button</button>
+                    <button id="descifrar1" class="btn btn-info" type="button">Descifrar</button>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <ul id="text">
+
+            <div class="col-12 col-md-12hidden-lg">
+                <ul id="text1" class="text-secondary">
 
                 </ul>
             </div>
-            <div class="col-12 col-md-6">
-                <ul id="text1">
-
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
+            
+        </section>
+    </main>
 
     <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendors/bootstrap4/js/bootstrap.min.js"></script>
